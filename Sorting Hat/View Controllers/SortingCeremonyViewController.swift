@@ -9,11 +9,38 @@ import UIKit
 
 class SortingCeremonyViewController: UIViewController {
     
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var answersTableView: UITableView!
+    
     var sortingQuestions = [Question]()
+    var currentQuestion: Question?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpQuestions()
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        guard let firstQuestion = sortingQuestions.first else {
+            return
+        }
+        configureUI(question: firstQuestion)
+    }
+    
+    private func configureUI(question: Question) {
+        questionLabel.text = question.text
+        
+        currentQuestion = question
+        
+        answersTableView.delegate = self
+        answersTableView.dataSource = self
+    }
+    
+    private func trackSortingAnswers(question: Question, answer: Answer) {
+        
     }
     
     private func setUpQuestions() {
@@ -56,3 +83,42 @@ class SortingCeremonyViewController: UIViewController {
     }
 }
 
+extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return currentQuestion?.answers.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AnswerCell
+        
+        cell.answerLabel.text = currentQuestion?.answers[indexPath.row].text
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let question = currentQuestion else {
+            return
+        }
+        let answer = question.answers[indexPath.row]
+        
+        trackSortingAnswers(question: question, answer: answer)
+        
+        if let index = sortingQuestions.firstIndex(where: { $0.text == question.text }) {
+            if index < (sortingQuestions.count - 1){
+                // Go to next question
+                let nextQuestion = sortingQuestions[index + 1]
+                configureUI(question: nextQuestion)
+                answersTableView.reloadData()
+            } else {
+                // show results
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "sortingCeremony"){
+                    vc.modalPresentationStyle = .fullScreen
+                    present(vc, animated: true)
+                }
+            }
+        }
+    }
+}
