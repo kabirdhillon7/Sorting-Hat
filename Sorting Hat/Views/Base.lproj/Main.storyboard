@@ -53,6 +53,21 @@
             </objects>
             <point key="canvasLocation" x="21" y="4"/>
         </scene>
+        <!--Sorting Ceremony View Controller-->
+        <scene sceneID="e1c-gt-d7K">
+            <objects>
+                <viewController storyboardIdentifier="sortingCeremony" id="NJa-dO-mU1" customClass="SortingCeremonyViewController" customModule="Sorting_Hat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hsn-Lc-bnJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Gzf-5V-8dz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrJ-GX-y5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="4"/>
+        </scene>
     </scenes>
     <resources>
         <image name="sorting_hat" width="1024" height="1024"/>

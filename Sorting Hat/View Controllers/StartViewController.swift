@@ -27,7 +27,10 @@ class StartViewController: UIViewController {
     
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
-        
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "sortingCeremony"){
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }
     }
     
 
