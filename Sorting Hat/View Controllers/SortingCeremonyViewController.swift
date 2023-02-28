@@ -91,6 +91,24 @@ class SortingCeremonyViewController: UIViewController {
                                                    Answer(text: "The Bold", affiliation: .Slytherin)]))
         
     }
+    
+    func calcHogwartsHouse(user: User) -> HogwartsHouse {
+        let maxMatchCount = max(user.gryffindorMatchCount, user.ravenclawMatchCount, user.hufflepuffMatchCount, user.slytherinMatchCount)
+
+        if maxMatchCount == user.gryffindorMatchCount {
+            print("Gryffindor has the greatest number of matches: \(maxMatchCount)")
+            return .Gryffindor
+        } else if maxMatchCount == user.ravenclawMatchCount {
+            print("Ravenclaw has the greatest number of matches: \(maxMatchCount)")
+            return .Ravenclaw
+        } else if maxMatchCount == user.hufflepuffMatchCount {
+            print("Hufflepuff has the greatest number of matches: \(maxMatchCount)")
+            return .Hufflepuff
+        } else {
+            print("Slytherin has the greatest number of matches: \(maxMatchCount)")
+            return .Slytherin
+        }
+    }
 }
 
 extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSource {
@@ -114,7 +132,6 @@ extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSou
         }
         let answer = question.answers[indexPath.row]
         
-        print(answer)
         trackSortingAnswers(answer: answer)
         
         if let index = sortingQuestions.firstIndex(where: { $0.text == question.text }) {
@@ -126,8 +143,11 @@ extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSou
                 configureUI(question: nextQuestion)
             } else {
                 // show results
-                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "results") as? SortingResultsViewController{
-                    vc.user = user
+                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "results") as? SortingResultsViewController {
+                    
+                    let house = calcHogwartsHouse(user: user)
+                    vc.hogwartsHouse = house
+                    
                     vc.modalPresentationStyle = .fullScreen
                     present(vc, animated: true)
                 }

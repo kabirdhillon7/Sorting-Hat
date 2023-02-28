@@ -22,9 +22,20 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // In case that user has been sorted already
+        let defaults = UserDefaults.standard
+        if defaults.object(forKey: "house") != nil && defaults.object(forKey: "user") != nil {
+            if let houseString = defaults.object(forKey: "house"),
+               let house = HogwartsHouse(rawValue: houseString as! String),
+               let vc = self.storyboard?.instantiateViewController(withIdentifier: "results") as? SortingResultsViewController {
+                
+                vc.hogwartsHouse = house
+                vc.modalPresentationStyle = .fullScreen
+                present(vc, animated: true)
+            }
+        }
     }
-    
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "sortingCeremony"){

@@ -9,8 +9,8 @@ import UIKit
 
 class SortingResultsViewController: UIViewController {
     
-    var user: User!
     var hogwartsHouse: HogwartsHouse!
+    let defaults = UserDefaults.standard
     
     @IBOutlet weak var houseLabel: UILabel!
     
@@ -20,26 +20,9 @@ class SortingResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hogwartsHouse = calcHogwartsHouse()
         configureView(house: hogwartsHouse)
-    }
-    
-    func calcHogwartsHouse() -> HogwartsHouse {
-        let maxMatchCount = max(user.gryffindorMatchCount, user.ravenclawMatchCount, user.hufflepuffMatchCount, user.slytherinMatchCount)
-
-        if maxMatchCount == user.gryffindorMatchCount {
-            print("Gryffindor has the greatest number of matches: \(maxMatchCount)")
-            return .Gryffindor
-        } else if maxMatchCount == user.ravenclawMatchCount {
-            print("Ravenclaw has the greatest number of matches: \(maxMatchCount)")
-            return .Ravenclaw
-        } else if maxMatchCount == user.hufflepuffMatchCount {
-            print("Hufflepuff has the greatest number of matches: \(maxMatchCount)")
-            return .Hufflepuff
-        } else {
-            print("Slytherin has the greatest number of matches: \(maxMatchCount)")
-            return .Slytherin
-        }
+        
+        defaults.set(hogwartsHouse.rawValue, forKey: "house")
     }
     
     func configureView(house: HogwartsHouse) {
@@ -99,9 +82,10 @@ class SortingResultsViewController: UIViewController {
     }
     
     @IBAction func restartButtonTapped(_ sender: UIButton) {
+        defaults.removeObject(forKey: "house")
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "start") as? StartViewController{
             vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+            self.present(vc, animated: true)
         }
     }
 }
