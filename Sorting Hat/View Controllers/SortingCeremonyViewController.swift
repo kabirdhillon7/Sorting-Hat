@@ -28,20 +28,14 @@ class SortingCeremonyViewController: UIViewController {
         guard let firstQuestion = sortingQuestions.first else {
             return
         }
-        configureUI(question: firstQuestion )
+        configureUI(question: firstQuestion)
         
         answersTableView.reloadData()
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
-    
     private func configureUI(question: Question) {
         questionLabel.text = question.text
-        
         currentQuestion = question
-        
         answersTableView.reloadData()
     }
     
@@ -57,8 +51,6 @@ class SortingCeremonyViewController: UIViewController {
         case .Slytherin:
             user.slytherinMatchCount += 1
         }
-        
-        print(user)
     }
     
     private func setUpQuestions() {
@@ -99,17 +91,6 @@ class SortingCeremonyViewController: UIViewController {
                                                    Answer(text: "The Bold", affiliation: .Slytherin)]))
         
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "goingToResult" {
-//            guard let vc = segue.destination as? SortingResultsViewController else {
-//                return
-//            }
-//            vc.user = user
-//            vc.modalPresentationStyle = .fullScreen
-//            present(vc, animated: true)
-//        }
-//    }
 }
 
 extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSource {
@@ -145,8 +126,6 @@ extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSou
                 configureUI(question: nextQuestion)
             } else {
                 // show results
-//                performSegue(withIdentifier: "goingToResult", sender: self)
-                
                 if let vc = self.storyboard?.instantiateViewController(withIdentifier: "results") as? SortingResultsViewController{
                     vc.user = user
                     vc.modalPresentationStyle = .fullScreen
