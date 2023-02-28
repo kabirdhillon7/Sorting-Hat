@@ -19,11 +19,6 @@ class SortingResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
         hogwartsHouse = calcHogwartsHouse()
         configureView(house: hogwartsHouse)
