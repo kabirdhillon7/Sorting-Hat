@@ -62,7 +62,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-Q5-ZWf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-Q5-ZWf">
                                 <rect key="frame" x="25" y="84" width="343" height="28.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -72,15 +72,15 @@
                                 <rect key="frame" x="25" y="117.66666666666669" width="343" height="734.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="mhL-af-sfD" customClass="AnswerCell" customModule="Sorting_Hat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="343" height="20.666666030883789"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="30" id="mhL-af-sfD" customClass="AnswerCell" customModule="Sorting_Hat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mhL-af-sfD" id="gAg-ED-gMN">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="20.666666030883789"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6t-ha-IRY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="20.666666666666668"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -124,7 +124,7 @@
         <!--Sorting Results View Controller-->
         <scene sceneID="Wpo-Y0-v02">
             <objects>
-                <viewController id="7EZ-Ki-2U2" customClass="SortingResultsViewController" customModule="Sorting_Hat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="results" id="7EZ-Ki-2U2" customClass="SortingResultsViewController" customModule="Sorting_Hat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D3O-Jh-ULs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,6 +153,9 @@
                             <constraint firstItem="6Pl-Sq-TMo" firstAttribute="centerX" secondItem="D3O-Jh-ULs" secondAttribute="centerX" id="xEd-ba-5J4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="houseLabel" destination="6Pl-Sq-TMo" id="DTe-Ms-vmD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeX-of-YLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

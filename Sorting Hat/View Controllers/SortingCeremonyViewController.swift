@@ -9,6 +9,8 @@ import UIKit
 
 class SortingCeremonyViewController: UIViewController {
     
+    var user = User(gryffindorMatchCount: 0, ravenclawMatchCount: 0, hufflepuffMatchCount: 0, slytherinMatchCount: 0)
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answersTableView: UITableView!
     
@@ -19,15 +21,20 @@ class SortingCeremonyViewController: UIViewController {
         super.viewDidLoad()
         setUpQuestions()
         
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+        
+        answersTableView.delegate = self
+        answersTableView.dataSource = self
         
         guard let firstQuestion = sortingQuestions.first else {
             return
         }
-        configureUI(question: firstQuestion)
+        configureUI(question: firstQuestion )
+        
+        answersTableView.reloadData()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
     }
     
     private func configureUI(question: Question) {
@@ -35,12 +42,23 @@ class SortingCeremonyViewController: UIViewController {
         
         currentQuestion = question
         
-        answersTableView.delegate = self
-        answersTableView.dataSource = self
+        answersTableView.reloadData()
     }
     
-    private func trackSortingAnswers(question: Question, answer: Answer) {
+    private func trackSortingAnswers(answer: Answer) {
+        let houseOption = answer.affiliation
+        switch houseOption {
+        case .Gryffindor:
+            user.gryffindorMatchCount += 1
+        case .Hufflepuff:
+            user.hufflepuffMatchCount += 1
+        case .Ravenclaw:
+            user.ravenclawMatchCount += 1
+        case .Slytherin:
+            user.slytherinMatchCount += 1
+        }
         
+        print(user)
     }
     
     private func setUpQuestions() {
@@ -81,6 +99,17 @@ class SortingCeremonyViewController: UIViewController {
                                                    Answer(text: "The Bold", affiliation: .Slytherin)]))
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAlternateStoryboard" {
+            guard let vc = segue.destination as? SortingResultsViewController else {
+                return
+            }
+            vc.user = user
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }
+    }
 }
 
 extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSource {
@@ -104,20 +133,23 @@ extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSou
         }
         let answer = question.answers[indexPath.row]
         
-        trackSortingAnswers(question: question, answer: answer)
+        print(answer)
+        trackSortingAnswers(answer: answer)
         
         if let index = sortingQuestions.firstIndex(where: { $0.text == question.text }) {
             if index < (sortingQuestions.count - 1){
                 // Go to next question
                 let nextQuestion = sortingQuestions[index + 1]
+                print("\(nextQuestion)")
+                currentQuestion = nil
                 configureUI(question: nextQuestion)
-                answersTableView.reloadData()
             } else {
                 // show results
-                if let vc = storyboard?.instantiateViewController(withIdentifier: "sortingCeremony"){
-                    vc.modalPresentationStyle = .fullScreen
-                    present(vc, animated: true)
-                }
+                performSegue(withIdentifier: "results", sender: self)
+//                if let vc = storyboard?.instantiateViewController(withIdentifier: "results"){
+//                    vc.modalPresentationStyle = .fullScreen
+//                    present(vc, animated: true)
+//                }
             }
         }
     }
