@@ -26,7 +26,6 @@ class SortingResultsViewController: UIViewController {
         configureView(house: hogwartsHouse)
     }
     
-    // need to calc result
     func calcHogwartsHouse() -> HogwartsHouse {
         let maxMatchCount = max(user.gryffindorMatchCount, user.ravenclawMatchCount, user.hufflepuffMatchCount, user.slytherinMatchCount)
 
@@ -45,7 +44,6 @@ class SortingResultsViewController: UIViewController {
         }
     }
     
-    // configure result
     func configureView(house: HogwartsHouse) {
         if house == .Gryffindor {
             let red = hexStringToUIColor(hex: "#C1121F")
