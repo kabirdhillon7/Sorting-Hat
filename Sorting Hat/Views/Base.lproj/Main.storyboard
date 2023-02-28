@@ -24,12 +24,17 @@
                                     <constraint firstAttribute="height" constant="300" id="J6F-Aa-i04"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtK-RE-ZTF">
-                                <rect key="frame" x="25" y="609" width="343" height="35"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtK-RE-ZTF">
+                                <rect key="frame" x="25" y="758" width="343" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start Sorting Ceremony">
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="17.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJu-w2-5OU"/>
                                 </connections>
@@ -40,10 +45,9 @@
                         <constraints>
                             <constraint firstItem="DtK-RE-ZTF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="7Sa-gx-mhX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DtK-RE-ZTF" secondAttribute="trailing" constant="25" id="PVl-8f-DCq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DtK-RE-ZTF" secondAttribute="bottom" constant="25" id="Te2-Zh-5v0"/>
                             <constraint firstItem="fQO-aa-Pnm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YDS-9q-hZK"/>
-                            <constraint firstItem="DtK-RE-ZTF" firstAttribute="top" secondItem="fQO-aa-Pnm" secondAttribute="bottom" constant="150" id="lhO-sP-0xb"/>
                             <constraint firstItem="fQO-aa-Pnm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="nKh-K8-JIX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DtK-RE-ZTF" secondAttribute="bottom" constant="174" id="yTL-gP-G2l"/>
                         </constraints>
                     </view>
                     <connections>
@@ -141,24 +145,34 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-4s-m0f">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-4s-m0f">
                                 <rect key="frame" x="25" y="713" width="343" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Learn More">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="17.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="learnMoreTapped:" destination="7EZ-Ki-2U2" eventType="touchUpInside" id="wC8-S3-Yc7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFl-5t-xdd">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFl-5t-xdd">
                                 <rect key="frame" x="25" y="758" width="343" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Restart">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="17.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="restartButtonTapped:" destination="7EZ-Ki-2U2" eventType="touchUpInside" id="3Pj-yN-qVy"/>
                                 </connections>
