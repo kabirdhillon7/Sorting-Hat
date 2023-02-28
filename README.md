@@ -1,10 +1,10 @@
 # Sorting-Hat
-Sorting Hat is an iOS app that allows users to find out their [Hogwarts House](https://www.wizardingworld.com/news/discover-your-hogwarts-house-on-wizarding-world).
+Sorting Hat is an iOS app that sorts users into their [Hogwarts House](https://www.wizardingworld.com/news/discover-your-hogwarts-house-on-wizarding-world) based on a fun questionnaire.
 
 ## Table of Contents
 
 - [Description](#description)
-- [Requirements](#Requirements)
+- [Requirements](#requirements)
 - [Demo](#demo)
 - [Wireframes](#wireframes)
 - [Installation](#installation)
@@ -15,9 +15,9 @@ Sorting Hat is an iOS app that allows users to find out their [Hogwarts House](h
 
 Some of the main features include:
 
-- A start page
-- A user questionaire
-- User's Hogwarts House result, and the option to find out more information about their house or restart
+- Hogwarts House sorting based on user responses
+- Detailed information about each Hogwarts house from the [Wizarding World website](https://www.wizardingworld.com)
+- Ability to restart sorting
 
 ## Requirements
 
