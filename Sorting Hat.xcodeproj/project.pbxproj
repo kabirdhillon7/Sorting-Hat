@@ -21,7 +21,6 @@
 		488352DB29AC8DED00FE08DF /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DA29AC8DED00FE08DF /* AnswerCell.swift */; };
 		488352DD29AC962500FE08DF /* SortingResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DC29AC962500FE08DF /* SortingResultsViewController.swift */; };
 		488352DF29AD6AEA00FE08DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DE29AD6AEA00FE08DF /* User.swift */; };
-		488352E229AD846300FE08DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352E129AD846300FE08DF /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		488352DA29AC8DED00FE08DF /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		488352DC29AC962500FE08DF /* SortingResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingResultsViewController.swift; sourceTree = "<group>"; };
 		488352DE29AD6AEA00FE08DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		488352E129AD846300FE08DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 		488352A029AC3C0800FE08DF /* Sorting Hat */ = {
 			isa = PBXGroup;
 			children = (
-				488352E029AD844C00FE08DF /* Extensions */,
 				488352D629AC6A3D00FE08DF /* Model */,
 				488352D329AC44DB00FE08DF /* Resources */,
 				488352D229AC44CE00FE08DF /* View Controllers */,
@@ -183,14 +180,6 @@
 				488352DA29AC8DED00FE08DF /* AnswerCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		488352E029AD844C00FE08DF /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				488352E129AD846300FE08DF /* Extensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +314,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				488352D829AC6A4B00FE08DF /* Question.swift in Sources */,
-				488352E229AD846300FE08DF /* Extensions.swift in Sources */,
 				488352A629AC3C0800FE08DF /* StartViewController.swift in Sources */,
 				488352D529AC68AB00FE08DF /* SortingCeremonyViewController.swift in Sources */,
 				488352DB29AC8DED00FE08DF /* AnswerCell.swift in Sources */,

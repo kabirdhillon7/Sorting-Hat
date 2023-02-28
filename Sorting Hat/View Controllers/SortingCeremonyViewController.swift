@@ -100,16 +100,16 @@ class SortingCeremonyViewController: UIViewController {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToAlternateStoryboard" {
-            guard let vc = segue.destination as? SortingResultsViewController else {
-                return
-            }
-            vc.user = user
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "goingToResult" {
+//            guard let vc = segue.destination as? SortingResultsViewController else {
+//                return
+//            }
+//            vc.user = user
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: true)
+//        }
+//    }
 }
 
 extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSource {
@@ -145,11 +145,13 @@ extension SortingCeremonyViewController: UITableViewDelegate, UITableViewDataSou
                 configureUI(question: nextQuestion)
             } else {
                 // show results
-                performSegue(withIdentifier: "results", sender: self)
-//                if let vc = storyboard?.instantiateViewController(withIdentifier: "results"){
-//                    vc.modalPresentationStyle = .fullScreen
-//                    present(vc, animated: true)
-//                }
+//                performSegue(withIdentifier: "goingToResult", sender: self)
+                
+                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "results") as? SortingResultsViewController{
+                    vc.user = user
+                    vc.modalPresentationStyle = .fullScreen
+                    present(vc, animated: true)
+                }
             }
         }
     }
