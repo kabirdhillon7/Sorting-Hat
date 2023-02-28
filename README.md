@@ -32,13 +32,11 @@ Some of the main features include:
 
 ## Wireframes
 ### Current Design
-<img src="" width=250><br>
+<img src="https://user-images.githubusercontent.com/74223402/221772070-6150510b-5ed8-4465-bcd6-0909045b827e.png" width=250><br>
 
 ### Original Design
-
-
 <details>
-  <img src="https://user-images.githubusercontent.com/74223402/221768211-616b2da1-55f5-4056-9ae6-7baffed6fca7.png" width=250><br>
+  <img src="https://user-images.githubusercontent.com/74223402/221772353-ec4b560b-6521-4b7c-8369-6b0f34f449b3.png" width=250><br>
 </details>
 
 ## Installation
