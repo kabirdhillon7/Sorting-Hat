@@ -6,6 +6,7 @@ Sorting Hat is an iOS app that allows users to find out their [Hogwarts House](h
 - [Description](#description)
 - [Requirements](#Requirements)
 - [Demo](#demo)
+- [Wireframes](#wireframes)
 - [Installation](#installation)
 - [Dependencies](#dependencies)
 - [Contact](#contact)
@@ -27,6 +28,16 @@ Some of the main features include:
 ### Current Progress Walkthrough
 
 <img src="https://user-images.githubusercontent.com/74223402/221764498-7b814598-744c-40f9-97c2-9934816a7cc6.gif" width=250><br>
+
+
+## Wireframes
+### Current Design
+<img src="https://user-images.githubusercontent.com/74223402/221765780-249e9e25-8464-421e-a23b-90b9a9610563.png" width=250><br>
+
+### Original Design
+<details>
+  <img src="https://user-images.githubusercontent.com/74223402/221765780-249e9e25-8464-421e-a23b-90b9a9610563.png" width=250><br>
+</details>
 
 ## Installation
 
