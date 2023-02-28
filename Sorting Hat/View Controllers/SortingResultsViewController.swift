@@ -14,6 +14,9 @@ class SortingResultsViewController: UIViewController {
     
     @IBOutlet weak var houseLabel: UILabel!
     
+    @IBOutlet weak var learnMoreButton: UIButton!
+    @IBOutlet weak var restartButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -90,4 +93,14 @@ class SortingResultsViewController: UIViewController {
             alpha: CGFloat(1.0)
         )
     }
+    
+    
+    @IBAction func learnMoreTapped(_ sender: UIButton) {
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "learnMore") as? HouseInfoWebViewController{
+            vc.hogwartsHouse = hogwartsHouse
+            vc.modalPresentationStyle = .popover
+            present(vc, animated: true)
+        }
+    }
+    
 }

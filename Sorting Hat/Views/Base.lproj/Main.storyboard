@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrJ-GX-y5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885" y="4"/>
+            <point key="canvasLocation" x="764" y="4"/>
         </scene>
         <!--Sorting Results View Controller-->
         <scene sceneID="Wpo-Y0-v02">
@@ -136,30 +136,73 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Sorting Hat has placed you in:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46C-xT-hXb">
-                                <rect key="frame" x="10" y="109" width="373" height="24"/>
+                                <rect key="frame" x="25" y="109" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-4s-m0f">
+                                <rect key="frame" x="25" y="713" width="343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Learn More">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="learnMoreTapped:" destination="7EZ-Ki-2U2" eventType="touchUpInside" id="wC8-S3-Yc7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFl-5t-xdd">
+                                <rect key="frame" x="25" y="758" width="343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Restart">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sEC-Ct-5gn"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="46C-xT-hXb" firstAttribute="top" secondItem="sEC-Ct-5gn" secondAttribute="top" constant="50" id="ACm-Xe-zRL"/>
-                            <constraint firstItem="46C-xT-hXb" firstAttribute="leading" secondItem="sEC-Ct-5gn" secondAttribute="leading" constant="10" id="FXz-sP-FWM"/>
+                            <constraint firstItem="46C-xT-hXb" firstAttribute="leading" secondItem="sEC-Ct-5gn" secondAttribute="leading" constant="25" id="FXz-sP-FWM"/>
+                            <constraint firstItem="eFl-5t-xdd" firstAttribute="top" secondItem="HMp-4s-m0f" secondAttribute="bottom" constant="10" id="Qb9-QL-Nhq"/>
+                            <constraint firstItem="sEC-Ct-5gn" firstAttribute="bottom" secondItem="eFl-5t-xdd" secondAttribute="bottom" constant="25" id="YhM-zQ-HUc"/>
+                            <constraint firstItem="sEC-Ct-5gn" firstAttribute="trailing" secondItem="eFl-5t-xdd" secondAttribute="trailing" constant="25" id="eDF-Qn-MVr"/>
+                            <constraint firstItem="HMp-4s-m0f" firstAttribute="leading" secondItem="sEC-Ct-5gn" secondAttribute="leading" constant="25" id="fG4-Gv-b8K"/>
                             <constraint firstItem="6Pl-Sq-TMo" firstAttribute="centerY" secondItem="D3O-Jh-ULs" secondAttribute="centerY" id="kcy-mi-b5V"/>
-                            <constraint firstItem="sEC-Ct-5gn" firstAttribute="trailing" secondItem="46C-xT-hXb" secondAttribute="trailing" constant="10" id="mUS-Pu-GKV"/>
+                            <constraint firstItem="sEC-Ct-5gn" firstAttribute="trailing" secondItem="46C-xT-hXb" secondAttribute="trailing" constant="25" id="mUS-Pu-GKV"/>
                             <constraint firstItem="6Pl-Sq-TMo" firstAttribute="centerX" secondItem="D3O-Jh-ULs" secondAttribute="centerX" id="xEd-ba-5J4"/>
+                            <constraint firstItem="sEC-Ct-5gn" firstAttribute="trailing" secondItem="HMp-4s-m0f" secondAttribute="trailing" constant="25" id="zfi-3d-pgK"/>
+                            <constraint firstItem="eFl-5t-xdd" firstAttribute="leading" secondItem="sEC-Ct-5gn" secondAttribute="leading" constant="25" id="zuk-On-Fcf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xme-3t-trH"/>
                     <connections>
                         <outlet property="houseLabel" destination="6Pl-Sq-TMo" id="DTe-Ms-vmD"/>
+                        <outlet property="learnMoreButton" destination="HMp-4s-m0f" id="Wav-xg-Scd"/>
+                        <outlet property="restartButton" destination="eFl-5t-xdd" id="BWS-4a-awx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeX-of-YLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1598" y="4"/>
+            <point key="canvasLocation" x="1589" y="4"/>
+        </scene>
+        <!--House Info Web View Controller-->
+        <scene sceneID="NA3-3W-3FG">
+            <objects>
+                <viewController storyboardIdentifier="learnMore" id="OTP-Cb-oYT" customClass="HouseInfoWebViewController" customModule="Sorting_Hat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LEA-2m-1SR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SdW-Xa-f9q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WzT-VM-6zE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jf-lW-AA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2491" y="4"/>
         </scene>
     </scenes>
     <resources>

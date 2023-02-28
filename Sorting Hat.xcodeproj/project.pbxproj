@@ -21,6 +21,7 @@
 		488352DB29AC8DED00FE08DF /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DA29AC8DED00FE08DF /* AnswerCell.swift */; };
 		488352DD29AC962500FE08DF /* SortingResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DC29AC962500FE08DF /* SortingResultsViewController.swift */; };
 		488352DF29AD6AEA00FE08DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DE29AD6AEA00FE08DF /* User.swift */; };
+		488352E429AD945200FE08DF /* HouseInfoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352E329AD945200FE08DF /* HouseInfoWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		488352DA29AC8DED00FE08DF /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		488352DC29AC962500FE08DF /* SortingResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingResultsViewController.swift; sourceTree = "<group>"; };
 		488352DE29AD6AEA00FE08DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		488352E329AD945200FE08DF /* HouseInfoWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseInfoWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				488352A529AC3C0800FE08DF /* StartViewController.swift */,
 				488352D429AC68AB00FE08DF /* SortingCeremonyViewController.swift */,
 				488352DC29AC962500FE08DF /* SortingResultsViewController.swift */,
+				488352E329AD945200FE08DF /* HouseInfoWebViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				488352D829AC6A4B00FE08DF /* Question.swift in Sources */,
 				488352A629AC3C0800FE08DF /* StartViewController.swift in Sources */,
+				488352E429AD945200FE08DF /* HouseInfoWebViewController.swift in Sources */,
 				488352D529AC68AB00FE08DF /* SortingCeremonyViewController.swift in Sources */,
 				488352DB29AC8DED00FE08DF /* AnswerCell.swift in Sources */,
 				488352DF29AD6AEA00FE08DF /* User.swift in Sources */,
