@@ -103,4 +103,10 @@ class SortingResultsViewController: UIViewController {
         }
     }
     
+    @IBAction func restartButtonTapped(_ sender: UIButton) {
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "start") as? StartViewController{
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }
+    }
 }
