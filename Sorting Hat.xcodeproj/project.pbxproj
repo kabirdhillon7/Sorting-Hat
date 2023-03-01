@@ -24,8 +24,8 @@
 		488352DD29AC962500FE08DF /* SortingResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DC29AC962500FE08DF /* SortingResultsViewController.swift */; };
 		488352DF29AD6AEA00FE08DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DE29AD6AEA00FE08DF /* User.swift */; };
 		488352E429AD945200FE08DF /* HouseInfoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352E329AD945200FE08DF /* HouseInfoWebViewController.swift */; };
-		48EFAB0E29AF0DB400FB835E /* 129356-golden-snitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 48EFAB0C29AF0DB400FB835E /* 129356-golden-snitch.json */; };
 		48EFAB1329AF11C400FB835E /* 7251-wizard-animation-character.json in Resources */ = {isa = PBXBuildFile; fileRef = 48EFAB1229AF11C400FB835E /* 7251-wizard-animation-character.json */; };
+		48EFAB1529AF174B00FB835E /* 7249-wizard-animation-character.json in Resources */ = {isa = PBXBuildFile; fileRef = 48EFAB1429AF174B00FB835E /* 7249-wizard-animation-character.json */; };
 		7895B9F581A7991015BF4B19 /* Pods_Sorting_Hat_Sorting_HatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34243651BBAB8C1DE105302F /* Pods_Sorting_Hat_Sorting_HatUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +69,8 @@
 		488352DC29AC962500FE08DF /* SortingResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingResultsViewController.swift; sourceTree = "<group>"; };
 		488352DE29AD6AEA00FE08DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		488352E329AD945200FE08DF /* HouseInfoWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseInfoWebViewController.swift; sourceTree = "<group>"; };
-		48EFAB0C29AF0DB400FB835E /* 129356-golden-snitch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "129356-golden-snitch.json"; sourceTree = "<group>"; };
 		48EFAB1229AF11C400FB835E /* 7251-wizard-animation-character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "7251-wizard-animation-character.json"; sourceTree = "<group>"; };
+		48EFAB1429AF174B00FB835E /* 7249-wizard-animation-character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "7249-wizard-animation-character.json"; sourceTree = "<group>"; };
 		54D43302E7363852643EACEE /* Pods_Sorting_HatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sorting_HatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73ABF8017C4647D7377F015E /* Pods-Sorting Hat-Sorting HatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorting Hat-Sorting HatUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sorting Hat-Sorting HatUITests/Pods-Sorting Hat-Sorting HatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		82E0E705567E3AD19EAE9878 /* Pods-Sorting Hat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorting Hat.release.xcconfig"; path = "Target Support Files/Pods-Sorting Hat/Pods-Sorting Hat.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,8 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				488352AA29AC3C0900FE08DF /* Assets.xcassets */,
-				48EFAB0C29AF0DB400FB835E /* 129356-golden-snitch.json */,
 				48EFAB1229AF11C400FB835E /* 7251-wizard-animation-character.json */,
+				48EFAB1429AF174B00FB835E /* 7249-wizard-animation-character.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -350,9 +350,9 @@
 			files = (
 				48EFAB1329AF11C400FB835E /* 7251-wizard-animation-character.json in Resources */,
 				488352AE29AC3C0900FE08DF /* LaunchScreen.storyboard in Resources */,
+				48EFAB1529AF174B00FB835E /* 7249-wizard-animation-character.json in Resources */,
 				488352AB29AC3C0900FE08DF /* Assets.xcassets in Resources */,
 				488352A929AC3C0800FE08DF /* Main.storyboard in Resources */,
-				48EFAB0E29AF0DB400FB835E /* 129356-golden-snitch.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

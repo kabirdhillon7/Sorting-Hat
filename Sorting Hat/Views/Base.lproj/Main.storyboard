@@ -124,8 +124,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pl-Sq-TMo">
-                                <rect key="frame" x="196.66666666666666" y="426" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pl-Sq-TMo">
+                                <rect key="frame" x="25" y="168" width="343" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -168,25 +168,36 @@
                                     <action selector="restartButtonTapped:" destination="7EZ-Ki-2U2" eventType="touchUpInside" id="3Pj-yN-qVy"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ctn-TF-NOQ" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="kK6-9K-bEJ"/>
+                                    <constraint firstAttribute="width" constant="300" id="q8s-IZ-L4r"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sEC-Ct-5gn"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="46C-xT-hXb" firstAttribute="top" secondItem="sEC-Ct-5gn" secondAttribute="top" constant="50" id="ACm-Xe-zRL"/>
+                            <constraint firstItem="Ctn-TF-NOQ" firstAttribute="centerX" secondItem="D3O-Jh-ULs" secondAttribute="centerX" id="Au0-BF-4bn"/>
                             <constraint firstItem="46C-xT-hXb" firstAttribute="leading" secondItem="sEC-Ct-5gn" secondAttribute="leading" constant="25" id="FXz-sP-FWM"/>
                             <constraint firstItem="eFl-5t-xdd" firstAttribute="top" secondItem="HMp-4s-m0f" secondAttribute="bottom" constant="10" id="Qb9-QL-Nhq"/>
+                            <constraint firstItem="Ctn-TF-NOQ" firstAttribute="centerY" secondItem="D3O-Jh-ULs" secondAttribute="centerY" id="Qsx-2H-f0Y"/>
+                            <constraint firstItem="sEC-Ct-5gn" firstAttribute="trailing" secondItem="6Pl-Sq-TMo" secondAttribute="trailing" constant="25" id="R7q-eh-G6Q"/>
                             <constraint firstItem="sEC-Ct-5gn" firstAttribute="bottom" secondItem="eFl-5t-xdd" secondAttribute="bottom" constant="25" id="YhM-zQ-HUc"/>
                             <constraint firstItem="sEC-Ct-5gn" firstAttribute="trailing" secondItem="eFl-5t-xdd" secondAttribute="trailing" constant="25" id="eDF-Qn-MVr"/>
                             <constraint firstItem="HMp-4s-m0f" firstAttribute="leading" secondItem="sEC-Ct-5gn" secondAttribute="leading" constant="25" id="fG4-Gv-b8K"/>
-                            <constraint firstItem="6Pl-Sq-TMo" firstAttribute="centerY" secondItem="D3O-Jh-ULs" secondAttribute="centerY" id="kcy-mi-b5V"/>
                             <constraint firstItem="sEC-Ct-5gn" firstAttribute="trailing" secondItem="46C-xT-hXb" secondAttribute="trailing" constant="25" id="mUS-Pu-GKV"/>
-                            <constraint firstItem="6Pl-Sq-TMo" firstAttribute="centerX" secondItem="D3O-Jh-ULs" secondAttribute="centerX" id="xEd-ba-5J4"/>
+                            <constraint firstItem="6Pl-Sq-TMo" firstAttribute="top" secondItem="46C-xT-hXb" secondAttribute="bottom" constant="35" id="qF4-8C-u4m"/>
+                            <constraint firstItem="6Pl-Sq-TMo" firstAttribute="leading" secondItem="sEC-Ct-5gn" secondAttribute="leading" constant="25" id="qRV-ES-6UZ"/>
                             <constraint firstItem="sEC-Ct-5gn" firstAttribute="trailing" secondItem="HMp-4s-m0f" secondAttribute="trailing" constant="25" id="zfi-3d-pgK"/>
                             <constraint firstItem="eFl-5t-xdd" firstAttribute="leading" secondItem="sEC-Ct-5gn" secondAttribute="leading" constant="25" id="zuk-On-Fcf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xme-3t-trH"/>
                     <connections>
+                        <outlet property="animationView" destination="Ctn-TF-NOQ" id="pbL-i4-WjG"/>
                         <outlet property="houseLabel" destination="6Pl-Sq-TMo" id="DTe-Ms-vmD"/>
                         <outlet property="learnMoreButton" destination="HMp-4s-m0f" id="Wav-xg-Scd"/>
                         <outlet property="restartButton" destination="eFl-5t-xdd" id="BWS-4a-awx"/>
@@ -194,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeX-of-YLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1589" y="4"/>
+            <point key="canvasLocation" x="1588.5496183206105" y="3.5211267605633805"/>
         </scene>
         <!--House Info Web View Controller-->
         <scene sceneID="NA3-3W-3FG">

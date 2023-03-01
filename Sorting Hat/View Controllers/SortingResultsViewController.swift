@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 class SortingResultsViewController: UIViewController {
     
@@ -14,15 +15,42 @@ class SortingResultsViewController: UIViewController {
     
     @IBOutlet weak var houseLabel: UILabel!
     
+    @IBOutlet weak var animationView: LottieAnimationView!
+    
     @IBOutlet weak var learnMoreButton: UIButton!
     @IBOutlet weak var restartButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Lottie Animation
+        startAnimation()
+        
         configureView(house: hogwartsHouse)
         
         defaults.set(hogwartsHouse.rawValue, forKey: "house")
+    }
+    
+    func startAnimation() {
+        animationView = .init(name: "7249-wizard-animation-character")
+        animationView!.frame = CGRect(x: 0, y: 150, width: 400, height: 400)
+
+        // 3. Set animation content mode
+        animationView!.contentMode = .scaleAspectFit
+        view.addSubview(animationView!)
+
+        // 4. Set animation loop mode
+        animationView!.loopMode = .loop
+
+        // 5. Adjust animation speed
+        animationView!.animationSpeed = 0.5
+
+        // 6. Play animation
+        animationView!.play()
+    }
+    
+    func stopAnimation() {
+        animationView?.stop()
     }
     
     func configureView(house: HogwartsHouse) {
@@ -82,6 +110,7 @@ class SortingResultsViewController: UIViewController {
     }
     
     @IBAction func restartButtonTapped(_ sender: UIButton) {
+        stopAnimation()
         defaults.removeObject(forKey: "house")
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "start") as? StartViewController{
             vc.modalPresentationStyle = .fullScreen
