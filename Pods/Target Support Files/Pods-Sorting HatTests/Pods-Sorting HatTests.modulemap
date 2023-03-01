@@ -1,0 +1,6 @@
+framework module Pods_Sorting_HatTests {
+  umbrella header "Pods-Sorting HatTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

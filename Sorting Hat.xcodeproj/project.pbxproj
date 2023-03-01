@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E411B988C7E37995BBA0982 /* Pods_Sorting_HatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D43302E7363852643EACEE /* Pods_Sorting_HatTests.framework */; };
+		1AEF1A686F983498ADCDE0B3 /* Pods_Sorting_Hat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2641B1D1E986760BB79D9E26 /* Pods_Sorting_Hat.framework */; };
 		488352A229AC3C0800FE08DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352A129AC3C0800FE08DF /* AppDelegate.swift */; };
 		488352A429AC3C0800FE08DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352A329AC3C0800FE08DF /* SceneDelegate.swift */; };
 		488352A629AC3C0800FE08DF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352A529AC3C0800FE08DF /* StartViewController.swift */; };
@@ -22,6 +24,9 @@
 		488352DD29AC962500FE08DF /* SortingResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DC29AC962500FE08DF /* SortingResultsViewController.swift */; };
 		488352DF29AD6AEA00FE08DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352DE29AD6AEA00FE08DF /* User.swift */; };
 		488352E429AD945200FE08DF /* HouseInfoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488352E329AD945200FE08DF /* HouseInfoWebViewController.swift */; };
+		48EFAB0E29AF0DB400FB835E /* 129356-golden-snitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 48EFAB0C29AF0DB400FB835E /* 129356-golden-snitch.json */; };
+		48EFAB1329AF11C400FB835E /* 7251-wizard-animation-character.json in Resources */ = {isa = PBXBuildFile; fileRef = 48EFAB1229AF11C400FB835E /* 7251-wizard-animation-character.json */; };
+		7895B9F581A7991015BF4B19 /* Pods_Sorting_Hat_Sorting_HatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34243651BBAB8C1DE105302F /* Pods_Sorting_Hat_Sorting_HatUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A85E1DA0B1CBDA9045FB8E9 /* Pods-Sorting HatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorting HatTests.debug.xcconfig"; path = "Target Support Files/Pods-Sorting HatTests/Pods-Sorting HatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2641B1D1E986760BB79D9E26 /* Pods_Sorting_Hat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sorting_Hat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34243651BBAB8C1DE105302F /* Pods_Sorting_Hat_Sorting_HatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sorting_Hat_Sorting_HatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4883529E29AC3C0800FE08DF /* Sorting Hat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sorting Hat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		488352A129AC3C0800FE08DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		488352A329AC3C0800FE08DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +69,14 @@
 		488352DC29AC962500FE08DF /* SortingResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingResultsViewController.swift; sourceTree = "<group>"; };
 		488352DE29AD6AEA00FE08DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		488352E329AD945200FE08DF /* HouseInfoWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseInfoWebViewController.swift; sourceTree = "<group>"; };
+		48EFAB0C29AF0DB400FB835E /* 129356-golden-snitch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "129356-golden-snitch.json"; sourceTree = "<group>"; };
+		48EFAB1229AF11C400FB835E /* 7251-wizard-animation-character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "7251-wizard-animation-character.json"; sourceTree = "<group>"; };
+		54D43302E7363852643EACEE /* Pods_Sorting_HatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sorting_HatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73ABF8017C4647D7377F015E /* Pods-Sorting Hat-Sorting HatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorting Hat-Sorting HatUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sorting Hat-Sorting HatUITests/Pods-Sorting Hat-Sorting HatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		82E0E705567E3AD19EAE9878 /* Pods-Sorting Hat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorting Hat.release.xcconfig"; path = "Target Support Files/Pods-Sorting Hat/Pods-Sorting Hat.release.xcconfig"; sourceTree = "<group>"; };
+		881103A6432D3EE2F808B1C4 /* Pods-Sorting HatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorting HatTests.release.xcconfig"; path = "Target Support Files/Pods-Sorting HatTests/Pods-Sorting HatTests.release.xcconfig"; sourceTree = "<group>"; };
+		9CD8626E71AB6A16D6758448 /* Pods-Sorting Hat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorting Hat.debug.xcconfig"; path = "Target Support Files/Pods-Sorting Hat/Pods-Sorting Hat.debug.xcconfig"; sourceTree = "<group>"; };
+		ED18588AC32092111A9B4F7E /* Pods-Sorting Hat-Sorting HatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorting Hat-Sorting HatUITests.release.xcconfig"; path = "Target Support Files/Pods-Sorting Hat-Sorting HatUITests/Pods-Sorting Hat-Sorting HatUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AEF1A686F983498ADCDE0B3 /* Pods_Sorting_Hat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E411B988C7E37995BBA0982 /* Pods_Sorting_HatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7895B9F581A7991015BF4B19 /* Pods_Sorting_Hat_Sorting_HatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +114,8 @@
 				488352B729AC3C0900FE08DF /* Sorting HatTests */,
 				488352C129AC3C0900FE08DF /* Sorting HatUITests */,
 				4883529F29AC3C0800FE08DF /* Products */,
+				F2DEF9BEC55DFA4F9399ADF3 /* Pods */,
+				4F542BA86457D5BB722133B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,11 +132,11 @@
 		488352A029AC3C0800FE08DF /* Sorting Hat */ = {
 			isa = PBXGroup;
 			children = (
+				48EFAB0529AF01CC00FB835E /* Assets */,
 				488352D629AC6A3D00FE08DF /* Model */,
 				488352D329AC44DB00FE08DF /* Resources */,
 				488352D229AC44CE00FE08DF /* View Controllers */,
 				488352D129AC44C700FE08DF /* Views */,
-				488352AA29AC3C0900FE08DF /* Assets.xcassets */,
 				488352AF29AC3C0900FE08DF /* Info.plist */,
 			);
 			path = "Sorting Hat";
@@ -185,6 +206,39 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		48EFAB0529AF01CC00FB835E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				488352AA29AC3C0900FE08DF /* Assets.xcassets */,
+				48EFAB0C29AF0DB400FB835E /* 129356-golden-snitch.json */,
+				48EFAB1229AF11C400FB835E /* 7251-wizard-animation-character.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4F542BA86457D5BB722133B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2641B1D1E986760BB79D9E26 /* Pods_Sorting_Hat.framework */,
+				34243651BBAB8C1DE105302F /* Pods_Sorting_Hat_Sorting_HatUITests.framework */,
+				54D43302E7363852643EACEE /* Pods_Sorting_HatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2DEF9BEC55DFA4F9399ADF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CD8626E71AB6A16D6758448 /* Pods-Sorting Hat.debug.xcconfig */,
+				82E0E705567E3AD19EAE9878 /* Pods-Sorting Hat.release.xcconfig */,
+				73ABF8017C4647D7377F015E /* Pods-Sorting Hat-Sorting HatUITests.debug.xcconfig */,
+				ED18588AC32092111A9B4F7E /* Pods-Sorting Hat-Sorting HatUITests.release.xcconfig */,
+				0A85E1DA0B1CBDA9045FB8E9 /* Pods-Sorting HatTests.debug.xcconfig */,
+				881103A6432D3EE2F808B1C4 /* Pods-Sorting HatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 488352C829AC3C0900FE08DF /* Build configuration list for PBXNativeTarget "Sorting Hat" */;
 			buildPhases = (
+				A4B0C954941806A6947CD8E7 /* [CP] Check Pods Manifest.lock */,
 				4883529A29AC3C0800FE08DF /* Sources */,
 				4883529B29AC3C0800FE08DF /* Frameworks */,
 				4883529C29AC3C0800FE08DF /* Resources */,
+				19F670AF54B67B6E36FA53D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,6 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 488352CB29AC3C0900FE08DF /* Build configuration list for PBXNativeTarget "Sorting HatTests" */;
 			buildPhases = (
+				045766C4205E74A511E0687F /* [CP] Check Pods Manifest.lock */,
 				488352B029AC3C0900FE08DF /* Sources */,
 				488352B129AC3C0900FE08DF /* Frameworks */,
 				488352B229AC3C0900FE08DF /* Resources */,
@@ -227,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 488352CE29AC3C0900FE08DF /* Build configuration list for PBXNativeTarget "Sorting HatUITests" */;
 			buildPhases = (
+				C27AE4263C181546A5F73C76 /* [CP] Check Pods Manifest.lock */,
 				488352BA29AC3C0900FE08DF /* Sources */,
 				488352BB29AC3C0900FE08DF /* Frameworks */,
 				488352BC29AC3C0900FE08DF /* Resources */,
+				5695F6B141164CB1418560A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,9 +348,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48EFAB1329AF11C400FB835E /* 7251-wizard-animation-character.json in Resources */,
 				488352AE29AC3C0900FE08DF /* LaunchScreen.storyboard in Resources */,
 				488352AB29AC3C0900FE08DF /* Assets.xcassets in Resources */,
 				488352A929AC3C0800FE08DF /* Main.storyboard in Resources */,
+				48EFAB0E29AF0DB400FB835E /* 129356-golden-snitch.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +371,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		045766C4205E74A511E0687F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sorting HatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19F670AF54B67B6E36FA53D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sorting Hat/Pods-Sorting Hat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sorting Hat/Pods-Sorting Hat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sorting Hat/Pods-Sorting Hat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5695F6B141164CB1418560A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sorting Hat-Sorting HatUITests/Pods-Sorting Hat-Sorting HatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sorting Hat-Sorting HatUITests/Pods-Sorting Hat-Sorting HatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sorting Hat-Sorting HatUITests/Pods-Sorting Hat-Sorting HatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B0C954941806A6947CD8E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sorting Hat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C27AE4263C181546A5F73C76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sorting Hat-Sorting HatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4883529A29AC3C0800FE08DF /* Sources */ = {
@@ -496,6 +660,7 @@
 		};
 		488352C929AC3C0900FE08DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CD8626E71AB6A16D6758448 /* Pods-Sorting Hat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -525,6 +690,7 @@
 		};
 		488352CA29AC3C0900FE08DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E0E705567E3AD19EAE9878 /* Pods-Sorting Hat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -554,6 +720,7 @@
 		};
 		488352CC29AC3C0900FE08DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A85E1DA0B1CBDA9045FB8E9 /* Pods-Sorting HatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +741,7 @@
 		};
 		488352CD29AC3C0900FE08DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881103A6432D3EE2F808B1C4 /* Pods-Sorting HatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -594,6 +762,7 @@
 		};
 		488352CF29AC3C0900FE08DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73ABF8017C4647D7377F015E /* Pods-Sorting Hat-Sorting HatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -612,6 +781,7 @@
 		};
 		488352D029AC3C0900FE08DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED18588AC32092111A9B4F7E /* Pods-Sorting Hat-Sorting HatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
