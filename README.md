@@ -27,8 +27,11 @@ Some of the main features include:
 ## Demo
 ### Current Progress Walkthrough
 
-<img src="https://user-images.githubusercontent.com/74223402/221764498-7b814598-744c-40f9-97c2-9934816a7cc6.gif" width=250><br>
+<img src="https://user-images.githubusercontent.com/74223402/222862489-40946195-a4e7-49cb-bfd0-7e9d14bddd55.gif" width=250><br>
 
+<details>
+  <img src="https://user-images.githubusercontent.com/74223402/221764498-7b814598-744c-40f9-97c2-9934816a7cc6.gif" width=250><br>
+</details>
 
 ## Wireframes
 ### Current Design
