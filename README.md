@@ -62,6 +62,7 @@ Open the `Sorting Hat.xworkspace` file in Xcode. Make sure that the `Sorting Hat
 
 This app uses the following dependencies:
 
+- [Lottie](https://github.com/airbnb/lottie-ios)
 - [WebKit](https://developer.apple.com/documentation/webkit)
 
 ## Contact
